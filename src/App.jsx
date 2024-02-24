@@ -1,14 +1,13 @@
-import { useState } from "react";
-import {ContextProvider, CountProvider} from "./context/ContextProvider";
+import { RecoilRoot } from "recoil";
 import Counter from "./pages/Counter";
 
 function App() {
 
   return (
     <div>
-      <CountProvider>
-        <Counter/>
-      </CountProvider>
+        <RecoilRoot>
+          <Counter/>
+        </RecoilRoot>
     </div>
    );
 }
